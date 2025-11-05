@@ -99,3 +99,158 @@ module regfile(
     assign rdisp = (disp == 0) ? 32'b0 : regs[disp];
 
 endmodule
+
+
+module control_unit(
+	input logic [31:0] instruction,
+	output logic mem_to_reg,
+	output logic write_to_mem, 
+	output logic branch,
+	output logic [4:0] alu_op,
+	output logic alu_origin,
+	output logic write_to_reg,
+  output logic jal,
+  output logic imd_to_reg
+);
+	always_comb begin
+    case (instruction[6:0])
+    7'b0110011: begin
+      // add, and, sub, or, slt
+      mem_to_reg <= 1'b0;
+      branch <= 1'b0;
+      write_to_mem <= 1'b0;
+      write_to_reg <= 1'b1;
+      alu_origin <= 1'b0;
+      jal <= 1'b0;
+      imd_to_reg <= 1'b0;
+      case (instruction[31:25])
+      7'b0100000: begin
+        alu_op <= 5'b00001;
+      end
+      default: begin
+        case (instruction[14:12])
+          3'b000: begin
+            alu_op <= 5'b00000;
+          end
+          3'b010: begin
+            alu_op <= 5'b00100;
+          end
+          3'b110: begin
+            alu_op <= 5'b00011;
+          end
+          default: begin
+            alu_op <= 5'b00010;
+          end
+        endcase
+        end
+      endcase
+    end
+    7'b0000011: begin
+      // lw
+      mem_to_reg <= 1'b1;
+      branch <= 1'b0;
+      alu_op <= 5'b00000;
+      write_to_mem <= 1'b0;
+      write_to_reg <= 1'b1;
+      alu_origin <= 1'b1;
+      jal <= 1'b0;
+      imd_to_reg <= 1'b0;
+    end
+    7'b0100011: begin
+      // sw
+      mem_to_reg <= 1'b0;
+      branch <= 1'b0;
+      alu_op <= 5'b00000;
+      write_to_mem <= 1'b1;
+      write_to_reg <= 1'b0;
+      alu_origin <= 1'b1;
+      jal <= 1'b0;
+      imd_to_reg <= 1'b0;
+    end
+    7'b1100011: begin
+      // beq
+      mem_to_reg <= 1'b0;
+      branch <= 1'b1;
+      alu_op <= 5'b00001;
+      write_to_mem <= 1'b0;
+      write_to_reg <= 1'b0;
+      alu_origin <= 1'b0;
+      jal <= 1'b0;
+      imd_to_reg <= 1'b0;
+    end
+    7'b0010011: begin
+      //addi
+      mem_to_reg <= 1'b0;
+      branch <= 1'b0;
+      alu_op <= 5'b00000;
+      write_to_mem <= 1'b0;
+      write_to_reg <= 1'b1;
+      alu_origin <= 1'b1;
+      jal <= 1'b0;
+      imd_to_reg <= 1'b0;
+    end
+    7'b1101111: begin
+      // jal (não implementado)
+      mem_to_reg <= 1'b0;
+      branch <= 1'b0;
+      alu_op <= 5'b00000;
+      write_to_mem <= 1'b0;
+      write_to_reg <= 1'b1;
+      alu_origin <= 1'b1;
+      jal <= 1'b1;
+      imd_to_reg <= 1'b0;
+    end
+    7'b1100111: begin
+      // jalr (não implementado)
+      mem_to_reg <= 1'b0;
+      branch <= 1'b0;
+      alu_op <= 5'b00000;
+      write_to_mem <= 1'b0;
+      write_to_reg <= 1'b1;
+      alu_origin <= 1'b1;
+      jal <= 1'b1;
+      imd_to_reg <= 1'b0;
+    end
+    default: begin
+      // lui (não implementado)
+      mem_to_reg <= 1'b0;
+      branch <= 1'b0;
+      alu_op <= 5'b00000;
+      write_to_mem <= 1'b0;
+      write_to_reg <= 1'b1;
+      alu_origin <= 1'b1;
+      jal <= 1'b1;
+      imd_to_reg <= 1'b1;
+    end
+    endcase
+	end
+endmodule
+
+
+module program_counter(
+  input logic clk,
+  input logic [31:0] in,
+  output logic [31:0] out
+);
+  reg [31:0] pc_value;
+  always @(posedge clk) begin
+    pc_value <= in;
+  end
+  assign out = pc_value;
+endmodule
+
+
+module mem_placeholder(
+  input logic clk,
+  input logic [31:0] add,
+  output logic [31:0] ins
+);
+  always @(posedge clk) begin
+    case (add)
+    32'b00000: ins = 32'b00000000000100001000000010010011;
+    32'b00100: ins = 32'b00000000000100010000000100010011;
+    32'b01000: ins = 32'b00000000001000001000000110110011;
+    default: ins = 32'b0;
+    endcase
+  end
+endmodule
