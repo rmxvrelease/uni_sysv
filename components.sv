@@ -43,7 +43,7 @@ endmodule
 
 module plus_four(
   input logic [31:0] a,
-  output logic out
+  output logic [31:0]out
 );
   assign out = a + 31'b0100;
 endmodule
