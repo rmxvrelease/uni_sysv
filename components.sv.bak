@@ -1,0 +1,11 @@
+module mux32_1(
+  input logic [31:0] s0,
+  input logic [31:0] s1,
+  input logic c,
+  output logic [31:0] o
+);
+  assign o = (c) ? s0 : s1;
+endmodule
+
+module uniciclo(input logic clk);
+endmodule

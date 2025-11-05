@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/rafa/tudo/materias/oac/uni_sysv/simulation/qsim
+vteste_mux
+Z1 !s110 1762095336
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+Z3 2uniciclo.vo
+!i10b 1
+!s100 `ZB0UW1kP=358C3:oEP[D3
+I9LONkUYjm0B7WP]Wg1U`i2
+R0
+w1762095336
+Z4 8uniciclo.vo
+Z5 Funiciclo.vo
+!i122 1
+L0 32 2240
+Z6 OL;L;2024.3;79
+31
+Z7 !s108 1762095336.000000
+Z8 !s107 uniciclo.vo|
+Z9 !s90 -work|work|uniciclo.vo|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vteste_mux_vlg_vec_tst
+R1
+R2
+r1
+!s85 0
+2teste_mux.vwf.vt
+!i10b 1
+!s100 XmnA5YYIZPcc<XgoAXIeN0
+I>Tnj8Qi_XbTR4aMFm[E_11
+R0
+w1762095335
+8teste_mux.vwf.vt
+Fteste_mux.vwf.vt
+!i122 2
+L0 30 350
+R6
+31
+R7
+!s107 teste_mux.vwf.vt|
+!s90 -work|work|teste_mux.vwf.vt|
+!i113 0
+R10
+R11
+vteste_ula
+Z12 !s110 1762096747
+R2
+r1
+!s85 0
+R3
+!i10b 1
+!s100 mEk2Bik]nC3G]1lLfM?h63
+IkAUbeenjQbOLCjWMK<jW@3
+R0
+w1762096747
+R4
+R5
+!i122 3
+L0 32 5269
+R6
+31
+Z13 !s108 1762096747.000000
+R8
+R9
+!i113 0
+R10
+R11
+vteste_ula_vlg_vec_tst
+R12
+R2
+r1
+!s85 0
+2teste_ula.vwf.vt
+!i10b 1
+!s100 iMfc6I3^;;fZ8kFj<[Ggf3
+I[5O1j>nE>XzQmUW:HjiZ80
+R0
+w1762096746
+8teste_ula.vwf.vt
+Fteste_ula.vwf.vt
+!i122 4
+L0 30 399
+R6
+31
+R13
+!s107 teste_ula.vwf.vt|
+!s90 -work|work|teste_ula.vwf.vt|
+!i113 0
+R10
+R11
