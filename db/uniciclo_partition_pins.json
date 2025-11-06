@@ -4,6 +4,134 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "pc[31]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[30]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[29]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[28]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[27]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[26]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[25]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[24]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[23]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[22]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[21]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[20]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[19]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[18]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[17]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[16]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[15]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[14]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[13]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[12]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[11]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[10]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[9]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[8]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pc[0]",
+					"strict" : false
+				},
+				{
 					"name" : "reg_display[31]",
 					"strict" : false
 				},
@@ -132,6 +260,134 @@
 					"strict" : false
 				},
 				{
+					"name" : "vinst[31]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[30]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[29]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[28]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[27]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[26]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[25]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[24]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[23]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[22]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[21]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[20]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[19]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[18]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[17]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[16]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[15]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[14]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[13]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[12]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[11]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[10]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[9]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[8]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[7]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vinst[0]",
+					"strict" : false
+				},
+				{
 					"name" : "display_reg[3]",
 					"strict" : false
 				},
@@ -157,6 +413,10 @@
 				},
 				{
 					"name" : "reset_reg",
+					"strict" : false
+				},
+				{
+					"name" : "clk_mem",
 					"strict" : false
 				}
 			]

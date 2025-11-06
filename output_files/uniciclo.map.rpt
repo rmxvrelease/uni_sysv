@@ -1,6 +1,6 @@
 Analysis & Synthesis report for uniciclo
-Wed Nov  5 19:34:09 2025
-Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Wed Nov  5 21:18:24 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
 ---------------------
@@ -16,18 +16,17 @@ Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for mem_instruction:inst20|altsyncram:altsyncram_component|altsyncram_a1n1:auto_generated
- 16. Source assignments for mem_dados:inst18|altsyncram:altsyncram_component|altsyncram_krm1:auto_generated
- 17. Parameter Settings for User Entity Instance: mem_instruction:inst20|altsyncram:altsyncram_component
- 18. Parameter Settings for User Entity Instance: mem_dados:inst18|altsyncram:altsyncram_component
- 19. altsyncram Parameter Settings by Entity Instance
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for mem_instruction:inst20|altsyncram:altsyncram_component|altsyncram_a1n1:auto_generated
+ 15. Source assignments for mem_dados:inst18|altsyncram:altsyncram_component|altsyncram_krm1:auto_generated
+ 16. Parameter Settings for User Entity Instance: mem_instruction:inst20|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: mem_dados:inst18|altsyncram:altsyncram_component
+ 18. altsyncram Parameter Settings by Entity Instance
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -54,14 +53,14 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov  5 19:34:08 2025           ;
-; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov  5 21:18:24 2025           ;
+; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; uniciclo                                        ;
 ; Top-level Entity Name           ; uniciclo                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 1002                                            ;
-; Total pins                      ; 39                                              ;
+; Total registers                 ; 1024                                            ;
+; Total pins                      ; 104                                             ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 65,536                                          ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -166,27 +165,22 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 14          ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
-;     Processor 9            ;   0.0%      ;
-;     Processor 10           ;   0.0%      ;
-;     Processor 11           ;   0.0%      ;
-;     Processor 12           ;   0.0%      ;
-;     Processor 13           ;   0.0%      ;
-;     Processor 14           ;   0.0%      ;
+;     Processors 9-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -195,23 +189,23 @@ on the Quartus Prime software download page.
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                      ; Library ;
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------+---------+
-; uniciclo.bdf                     ; yes             ; User Block Diagram/Schematic File      ; /home/rafa/tudo/code/projects/uni_sysv/uniciclo.bdf                               ;         ;
-; components.sv                    ; yes             ; User SystemVerilog HDL File            ; /home/rafa/tudo/code/projects/uni_sysv/components.sv                              ;         ;
-; mems/mem_dados.v                 ; yes             ; User Wizard-Generated File             ; /home/rafa/tudo/code/projects/uni_sysv/mems/mem_dados.v                           ;         ;
-; mems/mem_instruction.v           ; yes             ; User Wizard-Generated File             ; /home/rafa/tudo/code/projects/uni_sysv/mems/mem_instruction.v                     ;         ;
+; uniciclo.bdf                     ; yes             ; User Block Diagram/Schematic File      ; /home/rafa/tudo/materias/oac/uni_sysv/uniciclo.bdf                                ;         ;
+; components.sv                    ; yes             ; User SystemVerilog HDL File            ; /home/rafa/tudo/materias/oac/uni_sysv/components.sv                               ;         ;
+; mems/mem_dados.v                 ; yes             ; User Wizard-Generated File             ; /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_dados.v                            ;         ;
+; mems/mem_instruction.v           ; yes             ; User Wizard-Generated File             ; /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_instruction.v                      ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal251.inc                   ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/aglobal251.inc        ;         ;
+; aglobal241.inc                   ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/aglobal241.inc        ;         ;
 ; a_rdenreg.inc                    ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
 ; altrom.inc                       ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_a1n1.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/rafa/tudo/code/projects/uni_sysv/db/altsyncram_a1n1.tdf                     ;         ;
-; de1_text.mif                     ; yes             ; Auto-Found Memory Initialization File  ; /home/rafa/tudo/code/projects/uni_sysv/de1_text.mif                               ;         ;
-; db/altsyncram_krm1.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/rafa/tudo/code/projects/uni_sysv/db/altsyncram_krm1.tdf                     ;         ;
-; de1_data.mif                     ; yes             ; Auto-Found Memory Initialization File  ; /home/rafa/tudo/code/projects/uni_sysv/de1_data.mif                               ;         ;
+; db/altsyncram_a1n1.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/rafa/tudo/materias/oac/uni_sysv/db/altsyncram_a1n1.tdf                      ;         ;
+; de1_text.mif                     ; yes             ; Auto-Found Memory Initialization File  ; /home/rafa/tudo/materias/oac/uni_sysv/de1_text.mif                                ;         ;
+; db/altsyncram_krm1.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/rafa/tudo/materias/oac/uni_sysv/db/altsyncram_krm1.tdf                      ;         ;
+; de1_data.mif                     ; yes             ; Auto-Found Memory Initialization File  ; /home/rafa/tudo/materias/oac/uni_sysv/de1_data.mif                                ;         ;
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
@@ -220,27 +214,27 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1320      ;
+; Estimate of Logic utilization (ALMs needed) ; 1334      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1402      ;
+; Combinational ALUT usage for logic          ; 1449      ;
 ;     -- 7 input functions                    ; 15        ;
-;     -- 6 input functions                    ; 973       ;
-;     -- 5 input functions                    ; 270       ;
-;     -- 4 input functions                    ; 62        ;
-;     -- <=3 input functions                  ; 82        ;
+;     -- 6 input functions                    ; 970       ;
+;     -- 5 input functions                    ; 274       ;
+;     -- 4 input functions                    ; 65        ;
+;     -- <=3 input functions                  ; 125       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 1002      ;
+; Dedicated logic registers                   ; 1024      ;
 ;                                             ;           ;
-; I/O pins                                    ; 39        ;
+; I/O pins                                    ; 104       ;
 ; Total MLAB memory bits                      ; 0         ;
 ; Total block memory bits                     ; 65536     ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1066      ;
-; Total fan-out                               ; 12659     ;
-; Average fan-out                             ; 4.97      ;
+; Maximum fan-out                             ; 1056      ;
+; Total fan-out                               ; 12999     ;
+; Average fan-out                             ; 4.74      ;
 +---------------------------------------------+-----------+
 
 
@@ -249,10 +243,10 @@ on the Quartus Prime software download page.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                             ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |uniciclo                                 ; 1402 (10)           ; 1002 (0)                  ; 65536             ; 0          ; 39   ; 0            ; |uniciclo                                                                                       ; uniciclo        ; work         ;
-;    |adder:inst5|                          ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|adder:inst5                                                                           ; adder           ; work         ;
-;    |control_unit:inst17|                  ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|control_unit:inst17                                                                   ; control_unit    ; work         ;
-;    |imediato:inst4|                       ; 60 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|imediato:inst4                                                                        ; imediato        ; work         ;
+; |uniciclo                                 ; 1449 (10)           ; 1024 (0)                  ; 65536             ; 0          ; 104  ; 0            ; |uniciclo                                                                                       ; uniciclo        ; work         ;
+;    |adder:inst5|                          ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|adder:inst5                                                                           ; adder           ; work         ;
+;    |control_unit:inst17|                  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|control_unit:inst17                                                                   ; control_unit    ; work         ;
+;    |imediato:inst4|                       ; 67 (67)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|imediato:inst4                                                                        ; imediato        ; work         ;
 ;    |mem_dados:inst18|                     ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |uniciclo|mem_dados:inst18                                                                      ; mem_dados       ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |uniciclo|mem_dados:inst18|altsyncram:altsyncram_component                                      ; altsyncram      ; work         ;
 ;          |altsyncram_krm1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |uniciclo|mem_dados:inst18|altsyncram:altsyncram_component|altsyncram_krm1:auto_generated       ; altsyncram_krm1 ; work         ;
@@ -261,9 +255,9 @@ on the Quartus Prime software download page.
 ;          |altsyncram_a1n1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |uniciclo|mem_instruction:inst20|altsyncram:altsyncram_component|altsyncram_a1n1:auto_generated ; altsyncram_a1n1 ; work         ;
 ;    |mux32_1:inst15|                       ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|mux32_1:inst15                                                                        ; mux32_1         ; work         ;
 ;    |mux32_1:inst3|                        ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|mux32_1:inst3                                                                         ; mux32_1         ; work         ;
-;    |plus_four:inst7|                      ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|plus_four:inst7                                                                       ; plus_four       ; work         ;
-;    |program_counter:inst10|               ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|program_counter:inst10                                                                ; program_counter ; work         ;
-;    |regfile:inst|                         ; 1113 (1113)         ; 992 (992)                 ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|regfile:inst                                                                          ; regfile         ; work         ;
+;    |plus_four:inst7|                      ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|plus_four:inst7                                                                       ; plus_four       ; work         ;
+;    |program_counter:inst10|               ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|program_counter:inst10                                                                ; program_counter ; work         ;
+;    |regfile:inst|                         ; 1112 (1112)         ; 992 (992)                 ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|regfile:inst                                                                          ; regfile         ; work         ;
 ;    |ula:inst2|                            ; 132 (132)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uniciclo|ula:inst2                                                                             ; ula             ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -289,65 +283,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+----------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                    ;
-+-----------------------------------------+---------------------------------------------+
-; Register name                           ; Reason for Removal                          ;
-+-----------------------------------------+---------------------------------------------+
-; program_counter:inst10|pc_value[10..31] ; Lost fanout                                 ;
-; regfile:inst|regs[0][31]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][30]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][29]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][28]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][27]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][26]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][25]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][24]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][23]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][22]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][21]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][20]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][19]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][18]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][17]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][16]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][15]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][14]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][13]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][12]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][11]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][10]                ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][9]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][8]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][7]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][6]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][5]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][4]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][3]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][2]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][1]                 ; Stuck at GND due to stuck port clock_enable ;
-; regfile:inst|regs[0][0]                 ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 54  ;                                             ;
-+-----------------------------------------+---------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                          ;
-+-------------------------------------+--------------------+---------------------------------------------------------------------------+
-; Register name                       ; Reason for Removal ; Registers Removed due to This Register                                    ;
-+-------------------------------------+--------------------+---------------------------------------------------------------------------+
-; program_counter:inst10|pc_value[31] ; Lost Fanouts       ; program_counter:inst10|pc_value[30], program_counter:inst10|pc_value[29], ;
-;                                     ;                    ; program_counter:inst10|pc_value[28], program_counter:inst10|pc_value[27], ;
-;                                     ;                    ; program_counter:inst10|pc_value[26], program_counter:inst10|pc_value[25], ;
-;                                     ;                    ; program_counter:inst10|pc_value[24], program_counter:inst10|pc_value[23], ;
-;                                     ;                    ; program_counter:inst10|pc_value[22], program_counter:inst10|pc_value[21], ;
-;                                     ;                    ; program_counter:inst10|pc_value[20], program_counter:inst10|pc_value[19], ;
-;                                     ;                    ; program_counter:inst10|pc_value[18], program_counter:inst10|pc_value[17], ;
-;                                     ;                    ; program_counter:inst10|pc_value[16], program_counter:inst10|pc_value[15], ;
-;                                     ;                    ; program_counter:inst10|pc_value[14], program_counter:inst10|pc_value[13], ;
-;                                     ;                    ; program_counter:inst10|pc_value[12], program_counter:inst10|pc_value[11], ;
-;                                     ;                    ; program_counter:inst10|pc_value[10]                                       ;
-+-------------------------------------+--------------------+---------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++----------------------------------------+---------------------------------------------+
+; Register name                          ; Reason for Removal                          ;
++----------------------------------------+---------------------------------------------+
+; regfile:inst|regs[0][31]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][30]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][29]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][28]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][27]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][26]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][25]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][24]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][23]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][22]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][21]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][20]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][19]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][18]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][17]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][16]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][15]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][14]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][13]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][12]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][11]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][10]               ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][9]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][8]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][7]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][6]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][5]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][4]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][3]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][2]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][1]                ; Stuck at GND due to stuck port clock_enable ;
+; regfile:inst|regs[0][0]                ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 32 ;                                             ;
++----------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -355,9 +329,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1002  ;
+; Total registers                              ; 1024  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Synchronous Load   ; 30    ;
 ; Number of registers using Asynchronous Clear ; 992   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 994   ;
@@ -390,16 +364,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |uniciclo|imediato:inst4|Selector0      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |uniciclo|control_unit:inst17|alu_op[2] ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |uniciclo|mux32_1:inst15|o[9]           ;
-; 8:1                ; 9 bits    ; 45 LEs        ; 27 LEs               ; 18 LEs                 ; No         ; |uniciclo|ula:inst2|Selector30          ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |uniciclo|imediato:inst4|Selector8      ;
-; 10:1               ; 22 bits   ; 132 LEs       ; 88 LEs               ; 44 LEs                 ; No         ; |uniciclo|mux32_1:inst15|o[17]          ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |uniciclo|regfile:inst|rdisp[1]         ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |uniciclo|regfile:inst|rd2[18]          ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |uniciclo|regfile:inst|rd1[21]          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |uniciclo|control_unit:inst17|alu_op[1] ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 27 LEs               ; 18 LEs                 ; No         ; |uniciclo|ula:inst2|Selector28          ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |uniciclo|imediato:inst4|Selector7      ;
+; 10:1               ; 22 bits   ; 132 LEs       ; 88 LEs               ; 44 LEs                 ; No         ; |uniciclo|mux32_1:inst15|o[19]          ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |uniciclo|regfile:inst|rdisp[14]        ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |uniciclo|regfile:inst|rd2[19]          ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |uniciclo|regfile:inst|rd1[1]           ;
 ; 8:1                ; 6 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |uniciclo|imediato:inst4|Selector2      ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |uniciclo|imediato:inst4|Selector18     ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |uniciclo|imediato:inst4|Selector11     ;
 ; 15:1               ; 4 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |uniciclo|imediato:inst4|Selector20     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
@@ -580,32 +554,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 1002                        ;
+; arriav_ff             ; 1024                        ;
 ;     ENA               ; 2                           ;
 ;     ENA CLR           ; 992                         ;
-;     SLD               ; 8                           ;
-; arriav_lcell_comb     ; 1402                        ;
-;     arith             ; 61                          ;
+;     SLD               ; 30                          ;
+; arriav_lcell_comb     ; 1449                        ;
+;     arith             ; 105                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 50                          ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 19                          ;
+;         4 data inputs ; 3                           ;
+;         5 data inputs ; 52                          ;
 ;     extend            ; 15                          ;
 ;         7 data inputs ; 15                          ;
-;     normal            ; 1326                        ;
+;     normal            ; 1329                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 19                          ;
-;         3 data inputs ; 42                          ;
-;         4 data inputs ; 61                          ;
-;         5 data inputs ; 220                         ;
-;         6 data inputs ; 973                         ;
-; boundary_port         ; 39                          ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 43                          ;
+;         4 data inputs ; 62                          ;
+;         5 data inputs ; 222                         ;
+;         6 data inputs ; 970                         ;
+; boundary_port         ; 104                         ;
 ; stratixv_ram_block    ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.50                        ;
-; Average LUT depth     ; 6.99                        ;
+; Average LUT depth     ; 6.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -614,7 +588,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -623,31 +597,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Wed Nov  5 19:34:02 2025
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Wed Nov  5 21:18:17 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file uniciclo.bdf
     Info (12023): Found entity 1: uniciclo
 Info (12021): Found 9 design units, including 9 entities, in source file components.sv
-    Info (12023): Found entity 1: mux32_1 File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 1
-    Info (12023): Found entity 2: ula File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 10
-    Info (12023): Found entity 3: adder File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 36
-    Info (12023): Found entity 4: plus_four File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 44
-    Info (12023): Found entity 5: imediato File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 51
-    Info (12023): Found entity 6: regfile File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 70
-    Info (12023): Found entity 7: control_unit File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 104
-    Info (12023): Found entity 8: program_counter File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 230
-    Info (12023): Found entity 9: mem_placeholder File: /home/rafa/tudo/code/projects/uni_sysv/components.sv Line: 243
+    Info (12023): Found entity 1: mux32_1 File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 1
+    Info (12023): Found entity 2: ula File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 10
+    Info (12023): Found entity 3: adder File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 36
+    Info (12023): Found entity 4: plus_four File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 44
+    Info (12023): Found entity 5: imediato File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 51
+    Info (12023): Found entity 6: regfile File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 70
+    Info (12023): Found entity 7: control_unit File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 104
+    Info (12023): Found entity 8: program_counter File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 230
+    Info (12023): Found entity 9: mem_placeholder File: /home/rafa/tudo/materias/oac/uni_sysv/components.sv Line: 243
 Info (12021): Found 1 design units, including 1 entities, in source file teste_mux.bdf
     Info (12023): Found entity 1: teste_mux
 Info (12021): Found 1 design units, including 1 entities, in source file teste_ula.bdf
     Info (12023): Found entity 1: teste_ula
 Info (12021): Found 1 design units, including 1 entities, in source file mems/mem_dados.v
-    Info (12023): Found entity 1: mem_dados File: /home/rafa/tudo/code/projects/uni_sysv/mems/mem_dados.v Line: 40
+    Info (12023): Found entity 1: mem_dados File: /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_dados.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file mems/mem_instruction.v
-    Info (12023): Found entity 1: mem_instruction File: /home/rafa/tudo/code/projects/uni_sysv/mems/mem_instruction.v Line: 40
+    Info (12023): Found entity 1: mem_instruction File: /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_instruction.v Line: 40
 Info (12127): Elaborating entity "uniciclo" for the top level hierarchy
 Warning (275083): Bus "rd1[31..0]" found using same base name as "rd", which might lead to a name conflict.
 Warning (275083): Bus "rd2[31..0]" found using same base name as "rd", which might lead to a name conflict.
@@ -657,12 +631,13 @@ Warning (275080): Converted elements in bus name "rd1" using legacy naming rules
     Warning (275081): Converted element name(s) from "rd1[31..0]" to "rd131..0"
 Warning (275080): Converted elements in bus name "rd2" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "rd2[31..0]" to "rd231..0"
-Info (12128): Elaborating entity "regfile" for hierarchy "regfile:inst"
+Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst10"
+Info (12128): Elaborating entity "mux32_1" for hierarchy "mux32_1:inst6"
 Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:inst17"
 Info (12128): Elaborating entity "mem_instruction" for hierarchy "mem_instruction:inst20"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "mem_instruction:inst20|altsyncram:altsyncram_component" File: /home/rafa/tudo/code/projects/uni_sysv/mems/mem_instruction.v Line: 86
-Info (12130): Elaborated megafunction instantiation "mem_instruction:inst20|altsyncram:altsyncram_component" File: /home/rafa/tudo/code/projects/uni_sysv/mems/mem_instruction.v Line: 86
-Info (12133): Instantiated megafunction "mem_instruction:inst20|altsyncram:altsyncram_component" with the following parameter: File: /home/rafa/tudo/code/projects/uni_sysv/mems/mem_instruction.v Line: 86
+Info (12128): Elaborating entity "altsyncram" for hierarchy "mem_instruction:inst20|altsyncram:altsyncram_component" File: /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_instruction.v Line: 86
+Info (12130): Elaborated megafunction instantiation "mem_instruction:inst20|altsyncram:altsyncram_component" File: /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_instruction.v Line: 86
+Info (12133): Instantiated megafunction "mem_instruction:inst20|altsyncram:altsyncram_component" with the following parameter: File: /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_instruction.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "../de1_text.mif"
@@ -679,18 +654,14 @@ Info (12133): Instantiated megafunction "mem_instruction:inst20|altsyncram:altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_a1n1.tdf
-    Info (12023): Found entity 1: altsyncram_a1n1 File: /home/rafa/tudo/code/projects/uni_sysv/db/altsyncram_a1n1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_a1n1 File: /home/rafa/tudo/materias/oac/uni_sysv/db/altsyncram_a1n1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_a1n1" for hierarchy "mem_instruction:inst20|altsyncram:altsyncram_component|altsyncram_a1n1:auto_generated" File: /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst10"
-Info (12128): Elaborating entity "mux32_1" for hierarchy "mux32_1:inst6"
 Info (12128): Elaborating entity "ula" for hierarchy "ula:inst2"
-Info (12128): Elaborating entity "imediato" for hierarchy "imediato:inst4"
-Info (12128): Elaborating entity "plus_four" for hierarchy "plus_four:inst7"
-Info (12128): Elaborating entity "adder" for hierarchy "adder:inst5"
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:inst"
 Info (12128): Elaborating entity "mem_dados" for hierarchy "mem_dados:inst18"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "mem_dados:inst18|altsyncram:altsyncram_component" File: /home/rafa/tudo/code/projects/uni_sysv/mems/mem_dados.v Line: 86
-Info (12130): Elaborated megafunction instantiation "mem_dados:inst18|altsyncram:altsyncram_component" File: /home/rafa/tudo/code/projects/uni_sysv/mems/mem_dados.v Line: 86
-Info (12133): Instantiated megafunction "mem_dados:inst18|altsyncram:altsyncram_component" with the following parameter: File: /home/rafa/tudo/code/projects/uni_sysv/mems/mem_dados.v Line: 86
+Info (12128): Elaborating entity "altsyncram" for hierarchy "mem_dados:inst18|altsyncram:altsyncram_component" File: /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_dados.v Line: 86
+Info (12130): Elaborated megafunction instantiation "mem_dados:inst18|altsyncram:altsyncram_component" File: /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_dados.v Line: 86
+Info (12133): Instantiated megafunction "mem_dados:inst18|altsyncram:altsyncram_component" with the following parameter: File: /home/rafa/tudo/materias/oac/uni_sysv/mems/mem_dados.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "de1_data.mif"
@@ -707,20 +678,22 @@ Info (12133): Instantiated megafunction "mem_dados:inst18|altsyncram:altsyncram_
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_krm1.tdf
-    Info (12023): Found entity 1: altsyncram_krm1 File: /home/rafa/tudo/code/projects/uni_sysv/db/altsyncram_krm1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_krm1 File: /home/rafa/tudo/materias/oac/uni_sysv/db/altsyncram_krm1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_krm1" for hierarchy "mem_dados:inst18|altsyncram:altsyncram_component|altsyncram_krm1:auto_generated" File: /home/rafa/tudo/bin/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "imediato" for hierarchy "imediato:inst4"
+Info (12128): Elaborating entity "plus_four" for hierarchy "plus_four:inst7"
+Info (12128): Elaborating entity "adder" for hierarchy "adder:inst5"
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2487 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 2384 logic cells
+Info (21057): Implemented 2599 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 96 output pins
+    Info (21061): Implemented 2431 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 573 megabytes
-    Info: Processing ended: Wed Nov  5 19:34:09 2025
+    Info: Peak virtual memory: 542 megabytes
+    Info: Processing ended: Wed Nov  5 21:18:24 2025
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:16
 

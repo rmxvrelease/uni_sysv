@@ -2,25 +2,25 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 12:19:07 on Nov 02,2025
+# Start time: 21:31:40 on Nov 05,2025
 # vlog -work work uniciclo.vo 
-# -- Compiling module teste_ula
+# -- Compiling module uniciclo
 # 
 # Top level modules:
-# 	teste_ula
-# End time: 12:19:07 on Nov 02,2025, Elapsed time: 0:00:00
+# 	uniciclo
+# End time: 21:31:40 on Nov 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 12:19:07 on Nov 02,2025
-# vlog -work work teste_ula.vwf.vt 
-# -- Compiling module teste_ula_vlg_vec_tst
+# Start time: 21:31:40 on Nov 05,2025
+# vlog -work work teste_uniciclo.vwf.vt 
+# -- Compiling module uniciclo_vlg_vec_tst
 # 
 # Top level modules:
-# 	teste_ula_vlg_vec_tst
-# End time: 12:19:07 on Nov 02,2025, Elapsed time: 0:00:00
+# 	uniciclo_vlg_vec_tst
+# End time: 21:31:40 on Nov 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -suppress 12110 -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.teste_ula_vlg_vec_tst 
-# Start time: 12:19:07 on Nov 02,2025
+# vsim -suppress 12110 -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.uniciclo_vlg_vec_tst 
+# Start time: 21:31:40 on Nov 05,2025
 # ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2024.3 linux_x86_64 Sep 10 2024
@@ -36,17 +36,27 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# Refreshing /home/rafa/tudo/materias/oac/uni_sysv/simulation/qsim/work.teste_ula_vlg_vec_tst
+# Refreshing /home/rafa/tudo/materias/oac/uni_sysv/simulation/qsim/work.uniciclo_vlg_vec_tst
 # ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.teste_ula_vlg_vec_tst
-# Refreshing /home/rafa/tudo/materias/oac/uni_sysv/simulation/qsim/work.teste_ula
+# Loading work.uniciclo_vlg_vec_tst
+# Refreshing /home/rafa/tudo/materias/oac/uni_sysv/simulation/qsim/work.uniciclo
 # ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.teste_ula
+# Loading work.uniciclo
 # Loading cyclonev_ver.cyclonev_io_obuf
 # Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_clkena
 # Loading cyclonev_ver.cyclonev_lcell_comb
+# Loading cyclonev_ver.cyclonev_ram_block
+# Loading sv_std.std
+# Loading altera_lnsim_ver.generic_m10k
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.common_28nm_ram_block
+# Loading altera_lnsim_ver.common_28nm_ram_register
+# Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
 # after#26
-# ** Note: $finish    : teste_ula.vwf.vt(51)
-#    Time: 1 us  Iteration: 0  Instance: /teste_ula_vlg_vec_tst
-# End time: 12:19:08 on Nov 02,2025, Elapsed time: 0:00:01
+# ** Note: $finish    : teste_uniciclo.vwf.vt(55)
+#    Time: 1 us  Iteration: 0  Instance: /uniciclo_vlg_vec_tst
+# End time: 21:31:41 on Nov 05,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
