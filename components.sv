@@ -4,8 +4,9 @@ module mux32_1(
   input logic c,
   output logic [31:0] o
 );
-  assign o = (c) ? s0 : s1;
+  assign o = (c) ? s1 : s0;
 endmodule
+
 
 module ula(
   input logic [31:0] a,
@@ -33,6 +34,7 @@ module ula(
   end
 endmodule
 
+
 module adder(
 input logic [31:0] a,
 input logic [31:0] b,
@@ -41,12 +43,14 @@ output logic [31:0] out
   assign out = a + b;
 endmodule
 
+
 module plus_four(
   input logic [31:0] a,
   output logic [31:0]out
 );
-  assign out = a + 32'b001;
+  assign out = a + 32'b00000000000000000000000000000001;
 endmodule
+
 
 module imediato(
     input  logic [31:0] instr,
@@ -211,7 +215,7 @@ module control_unit(
       jal <= 1'b1;
       imd_to_reg <= 1'b0;
     end
-    default: begin
+    7'b0110111: begin
       // lui (não implementado)
       mem_to_reg <= 1'b0;
       branch <= 1'b0;
@@ -219,8 +223,19 @@ module control_unit(
       write_to_mem <= 1'b0;
       write_to_reg <= 1'b1;
       alu_origin <= 1'b1;
-      jal <= 1'b1;
+      jal <= 1'b0;
       imd_to_reg <= 1'b1;
+    end
+    default: begin
+      // lui (não implementado)
+      mem_to_reg <= 1'b0;
+      branch <= 1'b0;
+      alu_op <= 5'b00000;
+      write_to_mem <= 1'b0;
+      write_to_reg <= 1'b0;
+      alu_origin <= 1'b0;
+      jal <= 1'b0;
+      imd_to_reg <= 1'b0;
     end
     endcase
 	end
@@ -253,4 +268,22 @@ module mem_placeholder(
     default: ins = 32'b0;
     endcase
   end
+endmodule
+
+module reg_inst_split(
+  input logic [31:0] inst,
+  output logic [4:0] rs1,
+  output logic [4:0] rs2,
+  output logic [4:0] rd
+);
+  assign rs1 = inst[19:15];
+  assign rs2 = inst[24:20];
+  assign rd = inst[11:7];
+endmodule
+
+module bus_32_to_9(
+  input logic [31:0] in,
+  output logic [9:0] out
+);
+  assign out = in[9:0];
 endmodule

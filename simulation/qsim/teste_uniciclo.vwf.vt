@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/05/2025 22:16:04"
+// Generated on "11/06/2025 12:17:47"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uniciclo
 // 
@@ -31,24 +31,42 @@ module uniciclo_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg clk_mem;
-reg [4:0] display_reg;
-reg reset_reg;
+reg clock_mem_dados;
+reg [4:0] disp_reg;
 // wires                                               
-wire [31:0] pc;
-wire [31:0] reg_display;
-wire [31:0] vinst;
+wire [31:0] addr;
+wire [4:0] alu_op;
+wire alu_origin;
+wire branch;
+wire [31:0] d1;
+wire [31:0] d2;
+wire [31:0] disp;
+wire imd_to_reg;
+wire [31:0] instrucao;
+wire jal;
+wire mem_to_reg;
+wire write_to_mem;
+wire write_to_reg;
 
 // assign statements (if any)                          
 uniciclo i1 (
 // port map - connection between master ports and signals/registers   
+	.addr(addr),
+	.alu_op(alu_op),
+	.alu_origin(alu_origin),
+	.branch(branch),
 	.clk(clk),
-	.clk_mem(clk_mem),
-	.display_reg(display_reg),
-	.pc(pc),
-	.reg_display(reg_display),
-	.reset_reg(reset_reg),
-	.vinst(vinst)
+	.clock_mem_dados(clock_mem_dados),
+	.d1(d1),
+	.d2(d2),
+	.disp(disp),
+	.disp_reg(disp_reg),
+	.imd_to_reg(imd_to_reg),
+	.instrucao(instrucao),
+	.jal(jal),
+	.mem_to_reg(mem_to_reg),
+	.write_to_mem(write_to_mem),
+	.write_to_reg(write_to_reg)
 );
 initial 
 begin 
@@ -56,63 +74,51 @@ begin
 end 
 
 // clk
-initial
+always
 begin
-	repeat(12)
-	begin
-		clk = 1'b0;
-		clk = #40000 1'b1;
-		# 40000;
-	end
 	clk = 1'b0;
+	clk = #20000 1'b1;
+	#20000;
 end 
 
-// clk_mem
+// clock_mem_dados
 initial
 begin
-	clk_mem = 1'b0;
-	clk_mem = #10000 1'b1;
-	clk_mem = #20000 1'b0;
-	clk_mem = #10000 1'b1;
+	clock_mem_dados = 1'b0;
+	clock_mem_dados = #20000 1'b1;
 	# 10000;
-	repeat(47)
+	repeat(48)
 	begin
-		clk_mem = 1'b0;
-		clk_mem = #10000 1'b1;
+		clock_mem_dados = 1'b0;
+		clock_mem_dados = #10000 1'b1;
 		# 10000;
 	end
-	clk_mem = 1'b0;
+	clock_mem_dados = 1'b0;
 end 
-// display_reg[ 4 ]
+// disp_reg[ 4 ]
 initial
 begin
-	display_reg[4] = 1'b0;
+	disp_reg[4] = 1'b0;
 end 
-// display_reg[ 3 ]
+// disp_reg[ 3 ]
 initial
 begin
-	display_reg[3] = 1'b0;
+	disp_reg[3] = 1'b0;
 end 
-// display_reg[ 2 ]
+// disp_reg[ 2 ]
 initial
 begin
-	display_reg[2] = 1'b0;
+	disp_reg[2] = 1'b1;
 end 
-// display_reg[ 1 ]
+// disp_reg[ 1 ]
 initial
 begin
-	display_reg[1] = 1'b1;
+	disp_reg[1] = 1'b0;
 end 
-// display_reg[ 0 ]
+// disp_reg[ 0 ]
 initial
 begin
-	display_reg[0] = 1'b1;
-end 
-
-// reset_reg
-initial
-begin
-	reset_reg = 1'b0;
+	disp_reg[0] = 1'b1;
 end 
 endmodule
 

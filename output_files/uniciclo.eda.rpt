@@ -1,5 +1,5 @@
 EDA Netlist Writer report for uniciclo
-Wed Nov  5 22:16:05 2025
+Thu Nov  6 12:17:49 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Nov  5 22:16:05 2025 ;
+; EDA Netlist Writer Status ; Successful - Thu Nov  6 12:17:49 2025 ;
 ; Revision Name             ; uniciclo                              ;
 ; Top-level Entity Name     ; uniciclo                              ;
 ; Family                    ; Cyclone V                             ;
@@ -95,17 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Wed Nov  5 22:16:05 2025
+    Info: Processing started: Thu Nov  6 12:17:48 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/rafa/tudo/materias/oac/uni_sysv/simulation/qsim/ uniciclo -c uniciclo
-Info (119006): Selected device 5CSEMA5F31C6 for design "uniciclo"
-Warning (18550): Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
-    Info (119043): Atom "mem_instruction:inst20|altsyncram:altsyncram_component|altsyncram_a1n1:auto_generated|ram_block1a31" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file uniciclo.vo in folder "/home/rafa/tudo/materias/oac/uni_sysv/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 678 megabytes
-    Info: Processing ended: Wed Nov  5 22:16:05 2025
-    Info: Elapsed time: 00:00:00
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 696 megabytes
+    Info: Processing ended: Thu Nov  6 12:17:49 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
