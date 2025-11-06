@@ -45,7 +45,7 @@ module plus_four(
   input logic [31:0] a,
   output logic [31:0]out
 );
-  assign out = a + 31'b0100;
+  assign out = a + 31'b001;
 endmodule
 
 module imediato(

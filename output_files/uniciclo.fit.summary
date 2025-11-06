@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Nov  5 21:19:16 2025
+Fitter Status : Successful - Wed Nov  5 22:16:49 2025
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : uniciclo
 Top-level Entity Name : uniciclo
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1,242 / 32,070 ( 4 % )
+Logic utilization (in ALMs) : 1,214 / 32,070 ( 4 % )
 Total registers : 1039
 Total pins : 104 / 457 ( 23 % )
 Total virtual pins : 0
